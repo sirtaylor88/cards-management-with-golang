@@ -4,14 +4,12 @@ import "fmt"
 
 func main() {
 	// Declare a slice of strings
-	cards := []string{"Ace of Diamonds", newCard()}
+	cards := deck{"Ace of Diamonds", newCard()}
 	cards = append(cards, "Six of Spades")
 
 	fmt.Println(cards)
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 }
 
 func newCard() string {
