@@ -1,13 +1,8 @@
 package main
 
-import "fmt"
-
 func main() {
 	// Declare a slice of strings
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
-
-	fmt.Println(cards)
+	cards := newDeck()
 
 	cards.print()
 }
