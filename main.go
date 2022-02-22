@@ -1,12 +1,11 @@
 package main
 
 func main() {
-	// Declare a slice of strings
-	cards := newDeck()
+	// cards := newDeck()
+	// cards.saveToFile("my_cards")
 
-	hand, remainingCards := deal(cards, 5)
-	hand.print()
-	remainingCards.print()
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 }
 
 func newCard() string {
